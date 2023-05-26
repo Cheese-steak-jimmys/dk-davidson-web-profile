@@ -1,0 +1,121 @@
+@import url(global.css);
+
+header {
+    width: 80vw;
+}
+
+/* home button hover variation */
+#logo:hover {
+    box-shadow: 0px 0px 500px 110px  rgba(169, 8, 8, 0.717);
+    transition: 0.7s;
+}
+
+/* main content section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(173, 3, 3);
+    border-radius: 11px;
+    padding: 0.9rem;
+    margin:2vw;
+    background: url("T1A2-img/shane-avery-dark-geo-plants.jpg") no-repeat center;
+    background-size: cover;
+    box-shadow: 0px 0px 200px 80px#6a6b6b;
+    opacity: 80%;
+}
+
+main:hover {
+    opacity: 80%;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+}
+
+/* profile picture */
+main img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* width: 25vw; */
+    height: 18vw;
+    border-radius:35% 35%;
+    box-shadow: 0px 0px 200px 90px #000000;
+    opacity: 98%;
+}
+
+main img:hover {
+    opacity: 98%;
+    transition: 2s;
+}
+
+/* text decoration */
+h1, h5, p {
+    color: #6a6b6b;
+    font-family: Lato, sans-serif;
+    text-align: center;
+}
+h1 { font-size: 2rem; }
+
+h5 { font-size: 1.5rem; }
+
+p { padding: 1rem; }
+
+/* heading/subheading */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2px;
+    /* padding: 2rem;
+    padding-top: 0rem; */
+    z-index: 1;
+}
+
+/* page docoration img */
+#lion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vw;
+    background: rgb(173, 3, 3);
+    border-radius: 5px;
+    padding: 2rem;
+    margin: 34vw;
+    margin-top: 3vw;
+    margin-bottom: 0;
+    background: url("T1A2-img/kevin-mueller-lion-doorknocker.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 50% 50%;
+    box-shadow: 0px 0px 900px 90px #023835;
+    opacity: 80%;
+}
+
+@media screen and (max-width: 550px) {
+    h1 { font-size: 3rem; }
+}
+
+@media screen and (max-width: 695px) {
+    main img {
+        opacity: 98%;
+        transition: 2s;
+    }
+
+    main {
+    opacity: 80%;
+    transition-duration: 0.8s;
+}
+    #logo {
+        box-shadow: 0px 0px 500px 80px rgba(169, 8, 8, 0.717);
+        
+    }
+}
+
+@media screen and (min-width: 695px) {
+    header {
+        box-shadow: 0px 0px 500px 110px  rgba(0, 0, 0, 0.717);
+    transition: 0.7s;
+    }
+}
+
+    
