@@ -5,10 +5,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 20vw;
-    background: rgb(173, 3, 3);
-    border-radius: 5px;
-    margin: 5vw;
+    height: 8vw;
+    /* background: rgb(173, 3, 3); */
+    margin: 3vw;
+    margin-bottom: 1vw;
     background: url("T1A2-img/markus-spiske-green-data.jpg") no-repeat center;
     background-size: cover;
     box-shadow: 0px 0px 100px 5px#6a6b6b;
@@ -17,12 +17,18 @@
 }
 
 #projects-banner p {
-    font: lato;
-    font-size: 7.5vw;
+    font-size: 5vw;
     color:  rgba(169, 8, 8, 1111);
     text-decoration-line: underline;
     text-size-adjust: 700;
     text-shadow: -1px -1px px #6a6b6b;
+}
+
+#current-works-h1 h1{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    font-size: 4vw;
 }
 
 section {
