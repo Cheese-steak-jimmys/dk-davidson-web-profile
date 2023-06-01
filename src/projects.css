@@ -5,7 +5,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    align-self: center;
     height: 8vw;
+    width: 85vw;
     /* background: rgb(173, 3, 3); */
     margin: 3vw;
     margin-bottom: 1vw;
@@ -24,11 +26,12 @@
     text-shadow: -1px -1px px #6a6b6b;
 }
 
-#current-works-h1 h1{
+#current-works-h1 {
     display: flex;
     justify-content: center;
+    align-self: center;
     width: 80vw;
-    font-size: 4vw;
+    z-index: 1;
 }
 
 section {
@@ -40,6 +43,8 @@ section {
 
 main {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 40vw;
     background: rgb(0, 0, 0);
     border-radius: 5px;
@@ -66,12 +71,16 @@ section h1, h3, h4 {
     color: rgb(173, 3, 3);
 }
 
+#current-works-h1 h1 {
+    font-size: 4vw;
+    
+}
 
 p {
     font-size: 2.6vw;
 }
 
-aside {
+#image-a, #image-b, #image-c {
     width: 30%;
     height: 100%;
     margin: 1%;
@@ -93,4 +102,25 @@ aside {
 #image-c {
 background: url(T1A2-img/jasmin-sessler-dont\ panic.jpg) no-repeat center center;
 background-size: cover;
+}
+
+@media screen and (max-width: 412px) {
+    #projects-banner {
+        width: 70vw;
+        height: 15vw;
+    }
+
+    #projects-banner p {
+        font-size: 10vw;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        /* height: 80vw; */
+    }
+    #current-works-h1 {
+        font-size: 6vw;
+    }
 }
